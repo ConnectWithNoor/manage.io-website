@@ -23,6 +23,19 @@ module.exports = {
         PaleRedSuper: 'hsl(13, 100%, 96%)',
         GraySuperLight: 'hsl(0, 0%, 98%)',
       },
+      backgroundImage: {
+        heroPattern: "url('/bg-tablet-pattern.svg')",
+        ctaPatternDesktop: "url('/bg-simplify-section-desktop.svg')",
+        ctaPatternMobile: "url('/bg-simplify-section-mobile.svg')",
+      },
+      backgroundPosition: {
+        heroPatternPostiionDesktop: '90% -25%',
+        heroPatternPostiionMobile: '50px -50px',
+      },
+      backgroundSize: {
+        size800: '800px',
+        size500: '500px',
+      },
     },
   },
   plugins: [],

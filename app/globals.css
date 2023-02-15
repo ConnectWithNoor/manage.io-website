@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-heroPattern bg-heroPatternPostiionDesktop bg-no-repeat bg-size800;
+  }
+
+  @media (max-width: 576px) {
+    body {
+      @apply bg-heroPatternPostiionMobile bg-size500;
+    }
+  }
+}
+
+@layer components {
+  .cta {
+    @apply bg-ctaPatternDesktop bg-no-repeat;
+  }
+
+  .hamburger {
+    @apply cursor-pointer w-6 h-6 transition-all duration-200 relative focus:outline-none;
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    @apply absolute top-0 left-0 w-6 h-[1.5px] bg-black;
+  }
+
+  .hamburger-middle {
+    @apply translate-y-2;
+  }
+
+  .hamburger-bottom {
+    @apply translate-y-4;
+  }
+
+  @media (max-width: 576px) {
+    .cta {
+      @apply bg-ctaPatternMobile;
+    }
+  }
+}
